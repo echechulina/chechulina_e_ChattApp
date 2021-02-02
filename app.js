@@ -20,5 +20,14 @@ app.get("/chat", (req, res) =>{
 const server = app.listen(port, () => {
     console.log(`app is running on ${port}`);
 });
-
+// connection manager
 messenger.attach(server);
+
+// individual connection
+messenger.on('connection', (socket) => {
+    console.log(`a user connected: ${socket.id}`);
+
+    socket.on('disconnect', () => {
+        console.log('a user disconnected');
+    })
+})
