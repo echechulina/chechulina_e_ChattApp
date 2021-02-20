@@ -1,11 +1,9 @@
 # Donut Lovers Chat App
-
-
-## Project Requirements
+Do you love donuts so much that you are ready to talk about them every minute? Do you have a prop of your favorite donut flavors for all occasions? Are your family tired of hearing about donuts? Join our cozy Donut Lovers chat!
 
 
 ## Installation
-No special installation is required.
+Download the repo and open in a code editor. Content will require a Live Server to view properly.
 
 
 ## Tools
@@ -13,6 +11,10 @@ No special installation is required.
 * CSS
 * SASS
 * JS
+* Vue.js
+* Socket.io
+* NPM
+* Express
 
 
 ## MIT License
