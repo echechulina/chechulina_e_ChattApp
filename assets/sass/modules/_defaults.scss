@@ -6,31 +6,185 @@
 }
 
 body {
-    background-color: $main-bg-color;
+   
     color: $main-text-color;
 
     font-family: $default-family;
     font-size: 16px;
+    
+    background-image: $main-background-image;
 }
 
-a { 
-    display:block; 
-    color: white; 
-    // text-decoration: none;
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 20px;
+}
 
-    margin: 1 rem 0;
+.container {
+    background-image: url(../images/donut.png);
+    // background-repeat: no-repeat;
+    background-position: center;
+   
+   
+}
+
+.form{
+    background-color: #9b5de5;
+    width: 500px;
+    height: 360px;
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px auto;
+
 }
 
 .new-message {
-    padding: 10px;
-    background-color: blue;
-    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 45%;
+    padding: 8px 12px;
+    background-image: linear-gradient(to right, #9b5de5 0%, #be5de5 100%);
     border-radius: 8px;
-    float: left;
-    clear:both;
+    margin-bottom: 1rem;
+    color:white;
+    float:left;
+    clear: both;
+    animation: movenew 1s ease-out;
+
+    @keyframes movenew {
+        0%, 100% {
+          transform: translate(0, -45%);
+          opacity: 0;
+        }
+        
+        100% {
+          transform: translate(0, 0);
+          opacity: 100%;
+        }
+    }
 }
 
 .my-message {
-    background-color: green;
-    float: right;
+        margin-top: 20px;
+        float: right !important;
+        background-image: linear-gradient(to right, #f357a5 0%, #f195b1 100%);
+        color: white;
+        animation: movem 2s ease-out; }
+      
+      @keyframes movem {
+        0%, 100% {
+          transform: translate(0, -45%);
+          opacity: 0; }
+        100% {
+          transform: translate(0, 0);
+          opacity: 100%; } }
+      
+
+.welcome{
+ 
+    padding: 10%;
 }
+
+.flav{
+  margin-top: -40px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+
+.submit{
+    background-color: white;
+    border-radius: 13px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border: 3px solid white; 
+    width: 120px;
+    height: 120px;
+    color: darkblue;
+    font-size: 20px;
+    margin-top: -10px;
+    border-radius: 50%;
+	
+}
+
+.container_chat {
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.message_area {
+    
+    background-color: #9b5de5;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 40px;
+    height: 100vh; 
+    
+}
+
+.form-container{
+
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    
+
+}
+.text-message{
+height: 200px;
+width: 80%;
+resize: none;
+border-radius: 5%;
+}
+
+.sent{
+    background-color: white;
+    border-radius: 13px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border: 3px solid white; 
+    width: 100px;
+    height: 50px;
+    color: darkblue;
+    font-size: 16px;
+    margin-top: 5px;
+	
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 11px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    
+    border: 3px solid white;
+  }
+
+  .header{
+      margin-top: 40px;
+      font-size: 40px;
+  }
+
+  .message{
+    background-image: url(../images/donut.png);
+    // background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .free {
+      padding-right: 20px;
+  }
+

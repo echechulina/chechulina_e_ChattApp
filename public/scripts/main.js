@@ -1,5 +1,6 @@
 import ChatMessage from "./components/TheMessageComponent.js"
 
+
 (()  => {
     console.log('fired');
 
@@ -7,12 +8,13 @@ import ChatMessage from "./components/TheMessageComponent.js"
 
     function setUserId({sID, message}){
 
-        //debugger;
-
         vm.socketID = sID;
     }
+    
+    
     function appendMessage(message) {
         vm.messages.push(message);
+        vm.$refs.message_sound.play();
     }
 
     const vm = new Vue ({
@@ -22,11 +24,20 @@ import ChatMessage from "./components/TheMessageComponent.js"
             username: "",
             socketID: "",
             message: ""
+           
+        
+
         },
 
-        created: function() {
+        created: 
+        
+        function() {
             console.log('its alive!');
+
+           
         },
+
+        
 
         methods:{
             dispatchMessage(){
@@ -34,12 +45,16 @@ import ChatMessage from "./components/TheMessageComponent.js"
                 socket.emit('chatmessage', { content: this.message, name: this.nickname || "Anonymous"});
                 this.message = "";
             }
+
+            
         },
+
         components: {
             newmessage: ChatMessage
         }
     }).$mount("#app");
 
     socket.addEventListener("connected", setUserId);
+  
     socket.addEventListener('message', appendMessage);
 })();
