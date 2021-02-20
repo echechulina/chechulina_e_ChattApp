@@ -1,4 +1,5 @@
 # Donut Lovers Chat App
+(https://github.com/jon/coolproject/raw/master/public/images/donut.png)
 Do you love donuts so much that you are ready to talk about them every minute? Do you have a prop of your favorite donut flavors for all occasions? Are your family tired of hearing about donuts? Join our cozy Donut Lovers chat!
 
 
