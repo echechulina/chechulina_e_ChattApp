@@ -3,6 +3,7 @@
 
 Do you love donuts so much that you are ready to talk about them every minute? Do you have a prop of your favorite donut flavors for all occasions? Are your family tired of hearing about donuts? Join our cozy Donut Lovers chat!
 
+You can try the live version of our [Donut Lovers Chat App](https://donut-lovers-chat-app.herokuapp.com/).
 
 ## Installation
 Download the repo and open in a code editor. Content will require a Live Server to view properly.
